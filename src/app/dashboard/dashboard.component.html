@@ -1,0 +1,6 @@
+<h3>On Dashboard Page</h3>
+<div *ngFor='let file of dashboardFiles'>
+	<p> <b>Name:</b> {{ file.name }}, <b>Size:</b> {{ file.size }}, <b>Kind:</b> {{file.kind}}, <b>mimeType:</b> {{file.mimeType}} </p>
+</div>
+
+<button (click)="signOut()"type = "button" class="btn btn-danger">sign Out</button>
